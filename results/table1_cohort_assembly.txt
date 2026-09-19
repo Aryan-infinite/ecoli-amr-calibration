@@ -1,0 +1,11 @@
+Table 1. Cohort assembly (reproduced from raw BV-BRC exports)
+
+Laboratory Method AST records: 8631 (2071 R / 6560 S)
+Unique genomes: 7331
+Duplicated genomes: 1300 (1282 consistent, 18 conflicting -> excluded)
+Unambiguous genomes: 7313
+Deprecated excluded: 1
+Poor quality excluded: 38
+Final QC cohort: 7274 (1843 R / 5431 S)
+Resolvable isolation country: 6986 (96.0%)
+Float-ID parsing bug: 4651 spurious duplicates avoided by string dtype

@@ -1,0 +1,9 @@
+Section 3.6 lineage analysis -- verified against raw data, unaffected by
+gyrA/qnrB bugs (depends only on MLST + phenotype, not engineered features)
+
+UK:      274 MLST types, ST131 15.3% (395/2574), ST131 R-rate 74.9%, top5 41.3%
+Norway:  407 MLST types, ST131 7.9% (250/3153), ST131 R-rate 50.0%, top5 47.7%
+S.Asia:  79 MLST types, ST131 5.0% (12/238), ST131 R-rate 91.7%, top5 29.4%
+
+All values match original paper exactly except S.Asia top5 (29.4 vs 29.8,
+rounding-level difference, not investigated further).

@@ -1,0 +1,15 @@
+Section 3.5 recalibration experiment, corrected features
+
+Before recalibration: Norway intercept -0.488, South Asia intercept +0.927
+(both substantially smaller in magnitude than original paper's -1.156/+1.625,
+consistent with the gyrA/qnrB bug fixes)
+
+Recalibration works at small N in both populations, replicating the original
+finding qualitatively. HOWEVER: mean-based summary at South Asia N=200 is
+numerically unreliable -- 17/300 reps (5.7%) show extreme intercepts
+(as low as -38.76) from near-perfect separation in unregularized logistic
+regression on a 38-genome held-out set (238 total - 200 recal = 38 held out).
+Median intercept at N=200 is 0.249 (sane, consistent with trend), but mean
+is -2.122 (distorted). Reporting median/IQR instead of mean/percentile for
+this reason. This numerical instability was not identified or reported in
+the original paper.

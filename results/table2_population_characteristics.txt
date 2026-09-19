@@ -1,0 +1,8 @@
+Table 2. Study population characteristics (reproduced from raw data)
+
+United Kingdom: n=2575, R=731 (28.4%), years 2001-2012
+Norway: n=3153, R=311 (9.9%), years 1999-2017
+South Asia (pooled): n=238, R=159 (66.8%), years 2007-2021
+  India: R=77 S=38
+  Pakistan: R=81 S=39
+  Bangladesh: R=1 S=2

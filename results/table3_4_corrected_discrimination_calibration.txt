@@ -1,0 +1,19 @@
+Corrected discrimination and calibration (post gyrA + qnrB/aac6 fixes)
+
+Discrimination:
+  UK (OOF): AUROC=0.992 AUPRC=0.987 Sens=0.985 Spec=0.991 MCC=0.973
+  Norway:   AUROC=0.968 AUPRC=0.868 Sens=0.881 Spec=0.992 MCC=0.889
+  S.Asia:   AUROC=0.970 AUPRC=0.981 Sens=0.943 Spec=0.987 MCC=0.910
+
+Calibration (slope, intercept, Brier, ECE):
+  UK:      1.092, -0.041, 0.0088, 0.0101
+  Norway:  0.726, -0.488, 0.0206, 0.0176
+  S.Asia:  0.786, +0.927, 0.0399, 0.0347
+
+Comparison to original (buggy) results:
+  Norway intercept: -1.156 -> -0.488 (58% reduction in magnitude)
+  S.Asia intercept: +1.625 -> +0.927 (43% reduction in magnitude)
+Conclusion: real calibration failure under geographic shift persists,
+but original magnitude was substantially inflated by feature-construction
+bugs. Core qualitative finding (discrimination robust, calibration fragile)
+survives correction.

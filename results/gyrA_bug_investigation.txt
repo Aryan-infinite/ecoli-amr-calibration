@@ -1,0 +1,21 @@
+gyrA feature construction bug — investigation and fix
+
+Root cause: gene_gyrA.csv pools 5 evidence types (BLAT, K-mer Search,
+AMRFinderPlus:POINTP, RGI protein variant model, BLASTP). Only POINTP
+represents an actual point-mutation call; the others are homology/
+presence detectors that fire on the wild-type gene itself.
+
+BUGGY feature (matched on Antibiotics Class only, all evidence types):
+  UK susceptible carriage:     39.0%
+  Norway susceptible carriage: 100.0%
+
+STRICT feature (POINTP evidence only, quinolone class only):
+  UK susceptible carriage:     8.9%
+  Norway susceptible carriage: 4.9%
+  UK resistant carriage:       99.0% (unchanged)
+  Norway resistant carriage:   95.2%
+
+Conclusion: the apparent 'Norway anomaly' was an artifact of pooling
+non-mutation evidence types into a mutation-presence feature. Real
+discriminative signal survives after correction; false-positive noise
+in susceptible genomes does not.

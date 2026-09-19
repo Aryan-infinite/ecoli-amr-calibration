@@ -1,0 +1,25 @@
+qnrB / aac6_Ib_cr feature construction bug — investigation and fix
+
+Root cause: BV-BRC's 'Product' field is a fixed template tied to the
+search query term, not a per-row fact. Rows returned by a 'qnrB' search
+all carry Product='...QnrB family' even when Function correctly identifies
+the true gene as QnrS1. Same pattern in the 'ib-cr' search: Product says
+'...AAC(6')-Ib-cr...' for every row, including true TEM-156 and Ib10 hits.
+
+Naive pooled Gene+Function+Product substring matching (as literally
+described in Methods 2.4) therefore double-counts: 175/176 qnrS genomes
+were also incorrectly flagged qnrB-positive via the generic Product text.
+
+Fix: require a SPECIFIC allele number (e.g. QnrS1, QnrB10) via regex,
+rather than a generic family-level string match. For aac6_Ib_cr, use
+Gene/Function only (excluding Product entirely) and explicitly exclude
+rows matching Ib10 or TEM-family beta-lactamase.
+
+Corrected genome-level counts:
+  qnrA: 15 (unchanged)
+  qnrB: 29 (was 218 under naive matching -- 7.5x overcounted)
+  qnrS: 176 (unchanged)
+  oqxA: 6 (unchanged, file was clean)
+  oqxB: 7 (unchanged, file was clean)
+  aac6_Ib_cr: 489 (was contaminated by templated Product field)
+  qnrB/qnrS overlap: 0 (was 175 under naive matching)

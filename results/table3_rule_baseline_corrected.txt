@@ -1,0 +1,14 @@
+Rule-based baseline, corrected features
+
+UK:         AUROC=0.938 AUPRC=0.770 Sens=0.990 Spec=0.886 MCC=0.822
+Norway:     AUROC=0.945 AUPRC=0.594 Sens=0.955 Spec=0.935 MCC=0.738
+South Asia: AUROC=0.731 AUPRC=0.789 Sens=0.994 Spec=0.468 MCC=0.594
+
+MAJOR FINDING: original paper's rule-based AUROC=0.500 in Norway and
+South Asia was an artifact of the gyrA bug (near-universal false-positive
+firing), not a genuine baseline failure. Corrected rule performs nearly
+as well as the elastic-net model in Norway (0.945 vs 0.968) but still
+fails substantially in South Asia (0.731 vs 0.970). This changes the
+paper's core comparator narrative: the naive rule is not uniformly
+useless externally -- its failure is specific to populations with
+different resistance-mechanism composition, not to geography per se.

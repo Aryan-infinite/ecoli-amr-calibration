@@ -1,0 +1,25 @@
+Section 3.4 mechanism analysis, corrected features
+
+Mechanism composition among true resistant genomes:
+                        parC_mutation   acquired_only   neither
+UK (n=730):             98.5%           0.1%            1.4%
+Norway (n=311):         88.1%           1.3%            10.6%
+South Asia (n=159):     94.3%           4.4%            1.3%
+
+parC_mutation and acquired_gene_no_parC percentages closely replicate
+the original (pre-correction) paper -- these categories don't depend
+on the gyrA feature, so the gyrA bug never affected them.
+
+NEW FINDING (not present in original paper): the 'neither' category is
+substantially larger and Norway-specific. 33 Norway resistant genomes
+(10.6%) carry none of the 8 engineered features at all. Model mean
+predicted P(resistant) for these genomes = 0.042, vs 0.978 for
+parC-mutation resistant genomes in the same population -- the model is
+essentially blind to whatever mechanism explains their resistance.
+These genomes span 17 distinct MLST types (largest single type, ST131,
+is only 24% of the group), ruling out a single clonal artifact.
+UK's equivalent group is much smaller (10 genomes, 1.4%) and South Asia's
+is comparably small (2 genomes, 1.3%). This unexplained-resistance gap is
+a genuine, previously undocumented limitation of the 8-feature model,
+specific to the Norway population, and likely contributes to Norway's
+residual sensitivity of 0.881 (lowest of the three populations).

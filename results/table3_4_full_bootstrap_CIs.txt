@@ -1,0 +1,16 @@
+Tables 3-4 with 95% bootstrap CIs (1000 resamples, corrected features)
+
+=== Elastic-net discrimination ===
+UK:      AUROC 0.992 (0.986-0.996)  MCC 0.974 (0.964-0.983)
+Norway:  AUROC 0.968 (0.954-0.981)  MCC 0.889 (0.860-0.917)
+S.Asia:  AUROC 0.970 (0.945-0.989)  MCC 0.910 (0.849-0.957)
+
+=== Rule-based baseline discrimination ===
+UK:      AUROC 0.939 (0.930-0.946)  MCC 0.823 (0.803-0.842)
+Norway:  AUROC 0.945 (0.931-0.957)  MCC 0.738 (0.706-0.769)
+S.Asia:  AUROC 0.730 (0.676-0.785)  MCC 0.591 (0.494-0.682)
+
+=== Calibration ===
+UK:      slope 1.114 (0.977-1.306)  intercept -0.077 (-0.654 to 0.306) [CI includes 0: well-calibrated]
+Norway:  slope 0.729 (0.677-0.796)  intercept -0.494 (-0.772 to -0.237) [CI excludes 0 AND 1: genuine overprediction + flattening]
+S.Asia:  slope 0.827 (0.611-1.141)  intercept 0.973 (0.448-1.488) [intercept CI excludes 0: genuine underprediction; slope CI includes 1: pure mean-shift, not distortion]

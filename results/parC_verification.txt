@@ -1,0 +1,11 @@
+parC feature construction — verification (no bug found)
+
+gene_parC.csv evidence composition: BLAT=5799, POINTP=2686,
+RGI=1744, BLASTP=1, K-mer Search=1 (vs gyrA's 5784 K-mer Search rows).
+
+STRICT (POINTP-only) vs original class-only filtering give near-identical
+results (1828 vs 1849 genomes total; per-population/phenotype rates match
+to 3 decimal places). Original parC construction was correct.
+Confirms the gyrA bug was specific to that gene's unusually high volume
+of non-mutation homology/presence-detector rows, not a general flaw in
+the pipeline's class-based filtering logic.

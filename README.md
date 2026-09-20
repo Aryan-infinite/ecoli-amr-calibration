@@ -8,3 +8,10 @@ matching the Genome IDs in `data/raw/cip_phenotypes.csv`. A trimmed, cohort-spec
 version of this file (containing only the columns and genomes used in this analysis) 
 is provided instead at `data/processed/genome_metadata_cohort.csv` once the cohort-assembly 
 notebook has been run.
+
+## Notes for readers
+
+- The final Methods and Results text is `docs/methods_and_results_final.md`; its tables and figures are in `results/`.
+- `results/RECONCILIATION.md` records how the differences flagged in `results/FULL_COMPARISON.md` (the second re-implementation) were resolved.
+- `results/table3_4_full_bootstrap_CIs.txt` reports bootstrap means with percentile intervals. The manuscript reports point estimates with the same intervals; `results/final_checks_output.txt` (block D5) recomputes the point estimates and intervals.
+- An earlier notebook cell for Figure 2 hard-coded the mean predicted probability of acquired-gene-only genomes (0.118, 0.098, 0.069). Those values were wrong and were replaced by values computed from the fitted model (0.134, 0.074, 0.041; `results/final_checks_output.txt`, block D1). `results/figure2_mechanism.png` was regenerated from the model.

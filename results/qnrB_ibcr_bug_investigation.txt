@@ -23,3 +23,5 @@ Corrected genome-level counts:
   oqxB: 7 (unchanged, file was clean)
   aac6_Ib_cr: 489 (was contaminated by templated Product field)
   qnrB/qnrS overlap: 0 (was 175 under naive matching)
+
+NOTE: the counts above (qnrB 29, AAC(6')-Ib-cr 489) are for the pooled exports. Final counts in the 7,274-genome cohort: qnrB 28, AAC(6')-Ib-cr 485.

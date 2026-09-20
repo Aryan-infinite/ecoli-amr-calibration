@@ -1,0 +1,30 @@
+Country,Resistant,Susceptible,Total,Resistant (%),At least 100 genomes per phenotype class,Role in this study
+Norway,311,2842,3153,9.9,Yes,External test population
+United Kingdom,731,1844,2575,28.4,Yes,Training population
+USA,284,62,346,82.1,No,Not used
+Thailand,91,48,139,65.5,No,Not used
+Portugal,3,131,134,2.2,No,Not used
+Pakistan,81,39,120,67.5,No,Pooled into South Asia case study
+India,77,38,115,67.0,No,Pooled into South Asia case study
+Canada,0,71,71,0.0,No,Not used
+Germany,66,2,68,97.1,No,Not used
+Kenya,0,46,46,0.0,No,Not used
+Spain,31,9,40,77.5,No,Not used
+Italy,31,6,37,83.8,No,Not used
+Mali,0,31,31,0.0,No,Not used
+Tanzania,15,11,26,57.7,No,Not used
+Singapore,1,21,22,4.5,No,Not used
+Mozambique,0,16,16,0.0,No,Not used
+Rwanda,11,2,13,84.6,No,Not used
+Brazil,12,0,12,100.0,No,Not used
+Gambia,0,12,12,0.0,No,Not used
+Bangladesh,1,2,3,33.3,No,Pooled into South Asia case study
+Australia,0,2,2,0.0,No,Not used
+China,1,0,1,100.0,No,Not used
+Hong Kong,1,0,1,100.0,No,Not used
+Sweden,1,0,1,100.0,No,Not used
+Taiwan,1,0,1,100.0,No,Not used
+United Arab Emirates,1,0,1,100.0,No,Not used
+"Subtotal, country resolved",1751,5235,6986,25.1,,
+Country missing,92,196,288,31.9,,
+All quality-controlled genomes,1843,5431,7274,25.3,,

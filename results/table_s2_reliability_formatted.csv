@@ -1,0 +1,40 @@
+Population,Predicted probability,Genomes (n),Resistant (n),Observed resistance frequency
+UK (out-of-fold),0.0011,474,3,0.0063
+UK (out-of-fold),0.0012,479,3,0.0063
+UK (out-of-fold),0.0018,151,1,0.0066
+UK (out-of-fold),0.0024,1,0,0.0
+UK (out-of-fold),0.0026,329,0,0.0
+UK (out-of-fold),0.0026,1,0,0.0
+UK (out-of-fold),0.0046,239,0,0.0
+UK (out-of-fold),0.0647,20,1,0.05
+UK (out-of-fold),0.0684,5,0,0.0
+UK (out-of-fold),0.0685,89,3,0.0337
+UK (out-of-fold),0.0689,16,0,0.0
+UK (out-of-fold),0.0827,33,0,0.0
+UK (out-of-fold),0.4204,1,0,0.0
+UK (out-of-fold),0.5054,2,0,0.0
+UK (out-of-fold),0.7439,10,0,0.0
+UK (out-of-fold),0.9645,218,217,0.9954
+UK (out-of-fold),0.9758,42,42,1.0
+UK (out-of-fold),0.9762,61,60,0.9836
+UK (out-of-fold),0.9772,58,57,0.9828
+UK (out-of-fold),0.9787,157,156,0.9936
+UK (out-of-fold),0.9803,147,146,0.9932
+UK (out-of-fold),0.9886,26,26,1.0
+UK (out-of-fold),0.9894,7,7,1.0
+UK (out-of-fold),0.9896,7,7,1.0
+UK (out-of-fold),0.9897,1,1,1.0
+Norway,0.0018,2683,15,0.0056
+Norway,0.0037,1,0,0.0
+Norway,0.0043,2,0,0.0
+Norway,0.0087,1,0,0.0
+Norway,0.0708,135,21,0.1556
+Norway,0.1541,1,1,1.0
+Norway,0.4878,32,0,0.0
+Norway,0.9757,243,221,0.9095
+Norway,0.9879,1,1,1.0
+Norway,0.9897,54,52,0.963
+South Asia,0.0018,47,4,0.0851
+South Asia,0.0708,40,5,0.125
+South Asia,0.9757,116,115,0.9914
+South Asia,0.9897,35,35,1.0

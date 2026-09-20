@@ -1,0 +1,5 @@
+Calibration slope and intercept with C=1e6 (unpenalized, as in Section 2.8) and C=1 (scikit-learn default), same predictions.
+Rebuild values (C=1, from results/pipeline_output.txt): UK 1.092 / -0.116, Norway 0.720 / -0.507, South Asia 0.774 / 0.918.
+UK (OOF): C=1e6 slope 1.092 intercept -0.041 | C=1 slope 1.088 intercept -0.039
+Norway: C=1e6 slope 0.726 intercept -0.488 | C=1 slope 0.725 intercept -0.488
+South Asia: C=1e6 slope 0.786 intercept 0.927 | C=1 slope 0.778 intercept 0.918

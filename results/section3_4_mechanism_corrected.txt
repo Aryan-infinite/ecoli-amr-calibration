@@ -23,3 +23,5 @@ is comparably small (2 genomes, 1.3%). This unexplained-resistance gap is
 a genuine, previously undocumented limitation of the 8-feature model,
 specific to the Norway population, and likely contributes to Norway's
 residual sensitivity of 0.881 (lowest of the three populations).
+
+CORRECTION: the statement that these 33 genomes carry none of the 8 features is wrong. They lack a parC mutation and any acquired gene; 19 carry gyrA_fq_mut only and 14 carry no feature (derived from Table 3: 297 of 311 resistant Norwegian genomes carry at least one feature).

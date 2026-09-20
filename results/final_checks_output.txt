@@ -1,0 +1,68 @@
+=== D1: coefficients and Table 6 probabilities ===
+{'gyrA_fq_mut': np.float64(3.741), 'parC_fq_mut': np.float64(6.266), 'qnrA': np.float64(0.0), 'qnrB': np.float64(0.712), 'qnrS': np.float64(0.0), 'oqxA': np.float64(0.0), 'oqxB': np.float64(0.0), 'aac6_Ib_cr': np.float64(0.871)} -6.315
+UK
+                  count   mean
+mech                          
+acquired_no_parC      1  0.134
+neither              10  0.023
+parC_mutation       719  0.979
+     gyrA_fq_mut  parC_fq_mut  qnrA  qnrB  qnrS  oqxA  oqxB  aac6_Ib_cr      P
+170            1            0     0     1     0     0     0           0  0.134
+Norway
+                  count   mean
+mech                          
+acquired_no_parC      4  0.074
+neither              33  0.042
+parC_mutation       274  0.978
+      gyrA_fq_mut  parC_fq_mut  qnrA  qnrB  qnrS  oqxA  oqxB  aac6_Ib_cr      P
+135             0            0     0     0     1     0     0           0  0.002
+1183            1            0     0     0     0     0     0           1  0.154
+2125            1            0     0     0     1     0     0           0  0.071
+2980            1            0     0     0     1     0     0           0  0.071
+South Asia
+                  count   mean
+mech                          
+acquired_no_parC      7  0.041
+neither               2  0.036
+parC_mutation       150  0.979
+      gyrA_fq_mut  parC_fq_mut  qnrA  qnrB  qnrS  oqxA  oqxB  aac6_Ib_cr      P
+565             0            0     0     0     1     0     0           0  0.002
+1123            1            0     0     0     1     0     0           0  0.071
+1922            0            0     0     0     1     0     0           0  0.002
+3781            1            0     0     0     1     0     0           0  0.071
+3932            1            0     0     0     1     0     0           0  0.071
+4349            1            0     0     0     1     0     0           0  0.071
+5898            0            0     0     0     1     0     0           0  0.002
+
+=== D2: initial versus final feature counts ===
+qnrB  initial (substring, all fields): 214 | final: 28
+aac6  initial (substring, all fields): 488 | Gene+Function only: 485 | final: 485
+
+=== D3: excluded quinolone/triclosan gyrA records ===
+31 genomes carry the excluded records; 31 are in the cohort
+gyrA_fq_mut  Resistant Phenotype
+0            Susceptible            11
+1            Resistant              19
+             Susceptible             1
+dtype: int64
+Isolation Country  Resistant Phenotype
+Norway             Susceptible            8
+United Kingdom     Susceptible            3
+dtype: int64
+
+=== D4: reliability check (Supplementary Table S2) ===
+Norway: predicted<0.1  n=2822  mean predicted=0.005  observed=0.013
+Norway: largest group with predicted>0.9  n=243  predicted=0.976  observed=0.909
+South Asia: predicted<0.1  n=87  mean predicted=0.034  observed=0.103
+South Asia: largest group with predicted>0.9  n=116  predicted=0.976  observed=0.991
+
+=== D5: Table 4 and 5 check ===
+UK          elastic-net AUROC 0.992 (0.986-0.996)  AUPRC 0.987 (0.979-0.994)  Sens 0.985 (0.976-0.993)  Spec 0.991 (0.987-0.995)  MCC 0.973 (0.964-0.983)
+UK          rule-based  AUROC 0.938 (0.930-0.946)  AUPRC 0.770 (0.745-0.795)  Sens 0.990 (0.983-0.996)  Spec 0.886 (0.872-0.899)  MCC 0.822 (0.803-0.842)
+UK          calibration  slope 1.0918 (0.9770-1.3063)  intercept -0.0414 (-0.6537-0.3064)  Brier 0.0088 (0.0058-0.0119)  ECE 0.0101 (0.0073-0.0137)
+Norway      elastic-net AUROC 0.968 (0.954-0.981)  AUPRC 0.868 (0.830-0.902)  Sens 0.881 (0.843-0.916)  Spec 0.992 (0.988-0.995)  MCC 0.889 (0.860-0.917)
+Norway      rule-based  AUROC 0.945 (0.931-0.957)  AUPRC 0.594 (0.550-0.638)  Sens 0.955 (0.928-0.977)  Spec 0.935 (0.927-0.944)  MCC 0.738 (0.706-0.769)
+Norway      calibration  slope 0.7259 (0.6768-0.7964)  intercept -0.4876 (-0.7718--0.2368)  Brier 0.0206 (0.0162-0.0251)  ECE 0.0176 (0.0126-0.0225)
+South Asia  elastic-net AUROC 0.970 (0.945-0.989)  AUPRC 0.981 (0.965-0.993)  Sens 0.943 (0.902-0.975)  Spec 0.987 (0.959-1.000)  MCC 0.910 (0.849-0.957)
+South Asia  rule-based  AUROC 0.731 (0.676-0.785)  AUPRC 0.789 (0.733-0.844)  Sens 0.994 (0.980-1.000)  Spec 0.468 (0.360-0.579)  MCC 0.594 (0.494-0.682)
+South Asia  calibration  slope 0.7856 (0.6108-1.1409)  intercept 0.9273 (0.4478-1.4880)  Brier 0.0399 (0.0196-0.0670)  ECE 0.0347 (0.0128-0.0616)

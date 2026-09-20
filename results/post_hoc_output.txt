@@ -1,0 +1,48 @@
+=== TABLE 3 ===
+         feature UK R (n=730) UK S (n=1844) Norway R (n=311) Norway S (n=2842) South Asia R (n=159) South Asia S (n=79)
+     gyrA_fq_mut  723 (99.0%)    164 (8.9%)      296 (95.2%)        138 (4.9%)          155 (97.5%)          36 (45.6%)
+     parC_fq_mut  719 (98.5%)     18 (1.0%)      274 (88.1%)         56 (2.0%)          150 (94.3%)            1 (1.3%)
+            qnrA     0 (0.0%)      1 (0.1%)         0 (0.0%)          0 (0.0%)             2 (1.3%)            0 (0.0%)
+            qnrB     1 (0.1%)      3 (0.2%)         1 (0.3%)          2 (0.1%)             0 (0.0%)            0 (0.0%)
+            qnrS     0 (0.0%)     28 (1.5%)         5 (1.6%)         10 (0.4%)           28 (17.6%)            6 (7.6%)
+            oqxA     0 (0.0%)      0 (0.0%)         1 (0.3%)          0 (0.0%)             0 (0.0%)            0 (0.0%)
+            oqxB     0 (0.0%)      0 (0.0%)         1 (0.3%)          0 (0.0%)             0 (0.0%)            0 (0.0%)
+      aac6_Ib_cr  187 (25.6%)      2 (0.1%)       53 (17.0%)          5 (0.2%)           35 (22.0%)            0 (0.0%)
+any of the eight  723 (99.0%)   210 (11.4%)      297 (95.5%)        184 (6.5%)          158 (99.4%)          42 (53.2%)
+
+=== TABLE 8 ===  convergence warnings: none
+             elastic_net  unpenalized
+gyrA_fq_mut        3.741        4.297
+parC_fq_mut        6.266        6.901
+qnrA               0.000       -0.012
+qnrB               0.712        4.327
+qnrS               0.000       -0.294
+oqxA               0.000        0.000
+oqxB               0.000        0.000
+aac6_Ib_cr         0.871        1.214
+intercept         -6.315       -7.178
+
+=== TABLE 9 ===
+UK (OOF)    parC-only  AUROC=0.983 MCC=0.972 slope=1.000 intercept=0.145
+            8-feature  AUROC=0.992 MCC=0.973 slope=1.092 intercept=-0.041
+            difference AUROC=+0.008 (+0.004 to +0.013)   MCC=+0.001 (+0.000 to +0.003)
+Norway      parC-only  AUROC=0.931 MCC=0.839 slope=0.671 intercept=-0.892
+            8-feature  AUROC=0.968 MCC=0.889 slope=0.726 intercept=-0.488
+            difference AUROC=+0.038 (+0.025 to +0.051)   MCC=+0.050 (+0.034 to +0.067)
+South Asia  parC-only  AUROC=0.965 MCC=0.910 slope=0.812 intercept=1.993
+            8-feature  AUROC=0.970 MCC=0.910 slope=0.786 intercept=0.927
+            difference AUROC=+0.004 (-0.005 to +0.014)   MCC=+0.000 (+0.000 to +0.000)
+
+=== TABLE 10 ===
+UK window: n=884, resistant=180
+Norway full              n= 3153 R= 311 prevalence=0.099 meanP=0.1020 AUROC=0.968 slope=0.726 intercept=-0.488
+                         95% CI  AUROC 0.954-0.981  slope 0.677-0.796  intercept -0.772 to -0.237
+Norway 2007-2012         n= 1126 R=  88 prevalence=0.078 meanP=0.0911 AUROC=0.986 slope=1.003 intercept=-1.464
+                         95% CI  AUROC 0.967-0.999  slope 0.814-5.303  intercept -17.429 to -0.819
+South Asia full          n=  238 R= 159 prevalence=0.668 meanP=0.6333 AUROC=0.970 slope=0.786 intercept=0.927
+                         95% CI  AUROC 0.945-0.989  slope 0.611-1.141  intercept 0.448 to 1.488
+South Asia 2007-2012     n=   62 R=   8 prevalence=0.129 meanP=0.1508 AUROC=1.000 slope=3.254 intercept=-0.963
+
+Norway, resistant genomes: mechanism composition (%), and ST131 share of all genomes
+  full       {'parC_mutation': 88.1, 'neither': 10.6, 'acquired_no_parC': 1.3}  ST131 share: 7.9
+  2007-2012  {'parC_mutation': 97.7, 'neither': 2.3}  ST131 share: 6.7

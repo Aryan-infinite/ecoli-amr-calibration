@@ -1,0 +1,50 @@
+Cohort: 7274 genomes (unaffected by feature bugs -- matches original paper's Table 1)
+  corrected gyrA_fq_mut: 2226 genomes
+  corrected parC_fq_mut: 1828 genomes
+  corrected qnrA: 15 genomes
+  corrected qnrB: 29 genomes
+  corrected qnrS: 175 genomes
+  corrected oqxA: 6 genomes
+  corrected oqxB: 7 genomes
+  corrected aac6_Ib_cr: 347 genomes
+
+Corrected model coefficients:
+  gyrA_fq_mut: 3.766
+  parC_fq_mut: 6.344
+  qnrA: 0.000
+  qnrB: 0.710
+  qnrS: 0.000
+  oqxA: 0.000
+  oqxB: 0.000
+  aac6_Ib_cr: 0.845
+  intercept: -6.353
+
+=== DISCRIMINATION (corrected features) ===
+UK (elastic-net): {'AUROC': 0.991, 'AUPRC': 0.987, 'Sensitivity': np.float64(0.985), 'Specificity': np.float64(0.991), 'MCC': 0.973}
+UK (rule-based): {'AUROC': 0.938, 'AUPRC': 0.769, 'Sensitivity': np.float64(0.99), 'Specificity': np.float64(0.885), 'MCC': 0.821}
+Norway (elastic-net): {'AUROC': 0.968, 'AUPRC': 0.864, 'Sensitivity': np.float64(0.881), 'Specificity': np.float64(0.992), 'MCC': 0.889}
+Norway (rule-based): {'AUROC': 0.944, 'AUPRC': 0.584, 'Sensitivity': np.float64(0.955), 'Specificity': np.float64(0.932), 'MCC': 0.731}
+South Asia (elastic-net): {'AUROC': 0.969, 'AUPRC': 0.981, 'Sensitivity': np.float64(0.943), 'Specificity': np.float64(0.987), 'MCC': 0.91}
+South Asia (rule-based): {'AUROC': 0.731, 'AUPRC': 0.789, 'Sensitivity': np.float64(0.994), 'Specificity': np.float64(0.468), 'MCC': 0.594}
+
+=== CALIBRATION (corrected features) ===
+UK: slope=1.092  intercept=-0.116  Brier=0.0091
+Norway: slope=0.720  intercept=-0.507  Brier=0.0208
+South Asia: slope=0.774  intercept=0.918  Brier=0.0399
+
+=== RECALIBRATION (median [IQR], corrected features) ===
+Norway N=25: median intercept=-0.128 [IQR -0.593, 0.411]  (mean=-0.146, 1/281 extreme |intercept|>10)
+Norway N=50: median intercept=0.205 [IQR -0.531, 0.793]  (mean=0.067, 0/297 extreme |intercept|>10)
+Norway N=100: median intercept=0.097 [IQR -0.469, 0.650]  (mean=0.056, 0/300 extreme |intercept|>10)
+Norway N=150: median intercept=0.072 [IQR -0.439, 0.530]  (mean=0.039, 0/300 extreme |intercept|>10)
+Norway N=200: median intercept=0.055 [IQR -0.371, 0.438]  (mean=0.056, 0/300 extreme |intercept|>10)
+South Asia N=25: median intercept=0.057 [IQR -0.634, 0.837]  (mean=-0.080, 0/300 extreme |intercept|>10)
+South Asia N=50: median intercept=0.041 [IQR -0.480, 0.533]  (mean=0.030, 0/300 extreme |intercept|>10)
+South Asia N=100: median intercept=-0.017 [IQR -0.388, 0.374]  (mean=-0.036, 0/300 extreme |intercept|>10)
+South Asia N=150: median intercept=-0.027 [IQR -0.533, 0.341]  (mean=-0.113, 0/300 extreme |intercept|>10)
+South Asia N=200: median intercept=-0.080 [IQR -0.600, 0.345]  (mean=-0.167, 0/300 extreme |intercept|>10)
+
+=== MECHANISM COMPOSITION (should match original Table 5 -- sanity check) ===
+UK: parC=98.5%  no-parC-but-acquired=0.1%  neither=1.4%
+Norway: parC=88.1%  no-parC-but-acquired=1.3%  neither=10.6%
+South Asia: parC=94.3%  no-parC-but-acquired=4.4%  neither=1.3%

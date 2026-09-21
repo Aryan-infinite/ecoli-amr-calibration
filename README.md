@@ -15,3 +15,13 @@ notebook has been run.
 - `results/RECONCILIATION.md` records how the differences flagged in `results/FULL_COMPARISON.md` (the second re-implementation) were resolved.
 - `results/table3_4_full_bootstrap_CIs.txt` reports bootstrap means with percentile intervals. The manuscript reports point estimates with the same intervals; `results/final_checks_output.txt` (block D5) recomputes the point estimates and intervals.
 - An earlier notebook cell for Figure 2 hard-coded the mean predicted probability of acquired-gene-only genomes (0.118, 0.098, 0.069). Those values were wrong and were replaced by values computed from the fitted model (0.134, 0.074, 0.041; `results/final_checks_output.txt`, block D1). `results/figure2_mechanism.png` was regenerated from the model.
+
+## Output map
+
+- `docs/methods_and_results_final.md`: Methods and Results text (Tables 1 to 10, Figures 1 to 3).
+- `results/post_hoc_output.txt`: Tables 3, 8, 9 and 10 (feature carriage, unpenalized refit, parC-only comparison, collection window).
+- `results/final_checks_output.txt`: recomputation of the Table 6 probabilities and of the Table 4 and 5 intervals; `results/calibration_penalty_check.txt` compares calibration fits with and without a ridge penalty.
+- `results/claims_audit_output.txt`: checks behind statements in the Methods (BioProject, fold balance, annotation examples, gyrA carriage, identifiers) and the South Asia and Norway year tables in Results 3.8; code in `notebooks/claims_audit.py`.
+- `results/Supplementary_Tables_S1_S2.xlsx`: Supplementary Tables S1 and S2.
+- `results/RECONCILIATION.md`: how the differences found by the second re-implementation were resolved.
+- `requirements.txt`: environment (Python 3.13.15 on Google Colab).

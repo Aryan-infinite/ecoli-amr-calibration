@@ -1,0 +1,8 @@
+# Python 3.13.15 (Google Colab)
+pandas==2.2.3
+numpy==2.1.3
+scikit-learn==1.6.1
+matplotlib==3.10.0
+# versions not recorded:
+scipy
+openpyxl
